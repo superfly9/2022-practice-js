@@ -50,3 +50,7 @@ taskA(3, 10)
     console.log("[taskC]:", resC); // resC=>-260:taskC함수에서 resolve에 넘겨준 값
   });
 // 모두 실행되기까지 7 + 5 + 3초만큼 걸림
+
+const res = delay(3000).then(() => {
+  return "hello Seoul2";
+});
